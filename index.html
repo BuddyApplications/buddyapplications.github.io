@@ -5,44 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BuddyApplications</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
 </head>
 <body class="bg-white text-gray-800">
 
 <!-- Hero -->
-<header class="bg-[#76b82a] text-white py-20">
+<header class="bg-[#76b82a] text-white py-20 animate__animated animate__fadeInDown">
     <div class="max-w-4xl mx-auto px-6 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">BuddyApplications</h1>
-        <p class="text-xl md:text-2xl font-light">Slimme softwareoplossingen, gebouwd voor efficiëntie.</p>
+        <h1 class="text-5xl font-bold mb-4">BuddyApplications</h1>
+        <p class="text-2xl font-light">Slimme software, gebouwd voor efficiëntie.</p>
     </div>
 </header>
 
-<!-- Introductie -->
-<section class="py-16 px-6 max-w-4xl mx-auto text-center">
+<!-- Intro -->
+<section class="py-16 px-6 max-w-4xl mx-auto text-center animate__animated animate__fadeInUp">
     <h2 class="text-3xl font-semibold mb-4">Wie zijn wij?</h2>
     <p class="text-gray-600 text-lg leading-relaxed">
-        Bij <strong>BuddyApplications</strong> bouwen we doelgerichte tools voor bedrijven die écht werken.
-        Van voorraadbeheer tot personeelsplanning — wij leveren maatwerk met gebruiksgemak.
+        <strong>BuddyApplications</strong> ontwikkelt moderne webapplicaties voor bedrijven.
+        Wij richten ons op gemak, schaalbaarheid en slimme bedrijfsautomatisering.
     </p>
 </section>
 
-<!-- Depot Buddy Teaser -->
-<section class="bg-gray-50 py-16 px-6">
+<!-- Teaser: Depot Buddy -->
+<section class="bg-gray-50 py-16 px-6 animate__animated animate__fadeInUp animate__delay-1s">
     <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-semibold mb-4 text-[#76b82a]">🚚 Depot Buddy (binnenkort)</h2>
+        <h2 class="text-3xl font-semibold mb-4 text-[#76b82a]">🚚 Depot Buddy (Binnenkort beschikbaar)</h2>
         <p class="text-gray-700 text-lg mb-6">
             Een slimme SAAS-oplossing voor depotbeheer.<br>
-            Beheer voorraad, rollen, gebruikers en meer — alles vanuit één centrale omgeving.
+            Beheer je voorraad, rollen en team vanuit één centrale omgeving.
         </p>
         <span class="inline-block bg-[#76b82a] text-white px-4 py-2 rounded-full text-sm font-medium">
         Verwacht Q4 2025
       </span>
+
+        <!-- Roadmap toggle -->
+        <div class="mt-8 text-left max-w-xl mx-auto">
+            <button
+                    class="bg-[#76b82a] text-white px-4 py-2 rounded hover:bg-[#5a921e] transition"
+                    onclick="document.getElementById('roadmap').classList.toggle('hidden')"
+            >
+                📅 Bekijk onze roadmap
+            </button>
+
+            <div id="roadmap" class="hidden mt-6 bg-white border border-gray-200 rounded p-4 shadow">
+                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li><strong>Q3 2025:</strong> Interne bèta van Depot Buddy</li>
+                    <li><strong>Q4 2025:</strong> Publieke SAAS-lancering</li>
+                    <li><strong>2026:</strong> API + mobiele app release</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- Call to action -->
-<section class="py-16 px-6 text-center">
+<!-- Contact -->
+<section class="py-16 px-6 text-center animate__animated animate__fadeInUp animate__delay-2s">
     <h2 class="text-2xl font-semibold mb-4">Meer weten?</h2>
-    <p class="text-gray-600 mb-6">Neem contact met ons op voor samenwerkingen of demo's.</p>
+    <p class="text-gray-600 mb-6">Stuur ons een bericht voor samenwerkingen, demo's of vragen.</p>
     <a href="mailto:info@buddyapplications.nl" class="inline-block bg-[#76b82a] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#5a921e] transition">
         Contacteer ons
     </a>
