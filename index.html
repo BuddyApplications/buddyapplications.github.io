@@ -1,76 +1,58 @@
-<!DOCTYPE html>
-<html lang="nl">
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BuddyApplications</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-800">
+<body>
+<div class="min-h-screen flex flex-col bg-gradient-to-br from-[#00a86b] to-[#33c08f] text-white">
 
-<!-- Hero -->
-<header class="bg-[#76b82a] text-white py-20 animate__animated animate__fadeInDown">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-        <h1 class="text-5xl font-bold mb-4">BuddyApplications</h1>
-        <p class="text-2xl font-light">Slimme software, gebouwd voor efficiëntie.</p>
-    </div>
-</header>
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto space-y-12">
+        <section>
+            <h1 class="text-5xl font-extrabold mb-4 drop-shadow-lg">Welkom bij BuddyApplications</h1>
+            <p class="text-lg max-w-3xl mx-auto drop-shadow-md">
+                BuddyApplications ontwikkelt slimme, toegankelijke tools die jouw werk en planning makkelijker maken.
+                Onze projecten ShiftBuddy, PlannerBuddy en DepotBuddy helpen jou om efficiënter te werken, uren bij te houden, roosters te plannen en voorraden te beheren.
+            </p>
+        </section>
 
-<!-- Intro -->
-<section class="py-16 px-6 max-w-4xl mx-auto text-center animate__animated animate__fadeInUp">
-    <h2 class="text-3xl font-semibold mb-4">Wie zijn wij?</h2>
-    <p class="text-gray-600 text-lg leading-relaxed">
-        <strong>BuddyApplications</strong> ontwikkelt moderne webapplicaties voor bedrijven.
-        Wij richten ons op gemak, schaalbaarheid en slimme bedrijfsautomatisering.
-    </p>
-</section>
-
-<!-- Teaser: Depot Buddy -->
-<section class="bg-gray-50 py-16 px-6 animate__animated animate__fadeInUp animate__delay-1s">
-    <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-semibold mb-4 text-[#76b82a]">🚚 Depot Buddy (Binnenkort beschikbaar)</h2>
-        <p class="text-gray-700 text-lg mb-6">
-            Een slimme SAAS-oplossing voor depotbeheer.<br>
-            Beheer je voorraad, rollen en team vanuit één centrale omgeving.
-        </p>
-        <span class="inline-block bg-[#76b82a] text-white px-4 py-2 rounded-full text-sm font-medium">
-        Verwacht Q4 2025
-      </span>
-
-        <!-- Roadmap toggle -->
-        <div class="mt-8 text-left max-w-xl mx-auto">
-            <button
-                    class="bg-[#76b82a] text-white px-4 py-2 rounded hover:bg-[#5a921e] transition"
-                    onclick="document.getElementById('roadmap').classList.toggle('hidden')"
-            >
-                📅 Bekijk onze roadmap
-            </button>
-
-            <div id="roadmap" class="hidden mt-6 bg-white border border-gray-200 rounded p-4 shadow">
-                <ul class="list-disc pl-5 space-y-2 text-gray-700">
-                    <li><strong>Q3 2025:</strong> Interne bèta van Depot Buddy</li>
-                    <li><strong>Q4 2025:</strong> Publieke SAAS-lancering</li>
-                    <li><strong>2026:</strong> API + mobiele app release</li>
-                </ul>
+        <section class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-black">
+            <div class="bg-white rounded-lg p-6 shadow-lg flex flex-col justify-between">
+                <h2 class="text-2xl font-bold mb-3 text-[#00a86b]">ShiftBuddy</h2>
+                <p class="mb-4 flex-grow">
+                    Vul eenvoudig je gewerkte uren in en bereken automatisch je salaris. ShiftBuddy is dé tool voor iedereen die grip wil op zijn inkomsten.
+                </p>
+                <a href="" class="text-[#00a86b] font-semibold hover:underline self-start">Meer over ShiftBuddy →</a>
             </div>
-        </div>
-    </div>
-</section>
 
-<!-- Contact -->
-<section class="py-16 px-6 text-center animate__animated animate__fadeInUp animate__delay-2s">
-    <h2 class="text-2xl font-semibold mb-4">Meer weten?</h2>
-    <p class="text-gray-600 mb-6">Stuur ons een bericht voor samenwerkingen, demo's of vragen.</p>
-    <a href="mailto:info@buddyapplications.nl" class="inline-block bg-[#76b82a] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#5a921e] transition">
-        Contacteer ons
-    </a>
-</section>
+            <div class="bg-white rounded-lg p-6 shadow-lg flex flex-col justify-between">
+                <h2 class="text-2xl font-bold mb-3 text-[#00a86b]">PlannerBuddy</h2>
+                <p class="mb-4 flex-grow">
+                    Plan je werkroosters gemakkelijk en overzichtelijk, zodat iedereen weet wanneer ze moeten werken.
+                    Efficiëntie en rust voor managers en medewerkers.
+                </p>
+                <a href="" class="text-[#00a86b] font-semibold hover:underline self-start">Meer over PlannerBuddy →</a>
+            </div>
 
-<!-- Footer -->
-<footer class="text-center text-gray-500 text-sm py-8">
-    &copy; 2025 BuddyApplications. Alle rechten voorbehouden.
-</footer>
+            <div class="bg-white rounded-lg p-6 shadow-lg flex flex-col justify-between">
+                <h2 class="text-2xl font-bold mb-3 text-[#00a86b]">DepotBuddy</h2>
+                <p class="mb-4 flex-grow">
+                    Beheer eenvoudig je voorraden en houd grip op je producten.
+                    Met DepotBuddy weet je altijd wat er op voorraad is en wat er bijbesteld moet worden.
+                </p>
+                <a href="" class="text-[#00a86b] font-semibold hover:underline self-start">Meer over DepotBuddy →</a>
+            </div>
+        </section>
+    </main>
 
+    <footer class="py-6 text-center text-white/80 text-sm">
+        &copy; 2025 BuddyApplications. Alle rechten voorbehouden.
+    </footer>
+
+</div>
 </body>
 </html>
